@@ -35,23 +35,24 @@ body{
 .nuvem1, .nuvem2{
     position: absolute;
     background-image: url(./imagens/nuvem.webp);
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 20vw;
     height: 20vh;
 }
 .nuvem1{
     top: 5vh;
     left: 10vw;
-    animation: movimento-nuvem 5s infinite alternate;
+    animation: movimento-nuvem 7s infinite alternate;
 }
 .nuvem2{
     top: 15vh;
     left: 80vw;
-    animation: movimento-nuvem 5s infinite alternate;
+    animation: movimento-nuvem 7s infinite alternate;
 }
 @keyframes movimento-nuvem{
     0%{
-        transform: translateX(-10vw);
+        transform: translateX(-15vw);
     }
 }
 @media screen and (max-width: 950px) {
