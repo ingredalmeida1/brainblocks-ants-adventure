@@ -16,3 +16,69 @@ body{
     height: 10vh;
     margin: 0vh 0vw -0.3vh -2vw;
 }
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('./fontes/BarlowCondensed-BlackItalic.ttf')format('truetype');
+}
+.titulo1{
+    font-family: 'BarlowCondensed', serif;
+    color: #ffd41f;
+    font-size: 7.5vw;
+    text-shadow: 0vw -0.3vw 0vw #ffb429;
+    text-align: center;
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}/*
+.titulo2{
+    position: absolute;
+    line-height: 1;
+    top: -8vh
+}*/
+@media screen and (max-width: 950px) {
+    .titulo1{
+        position: absolute;
+        top: 20vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 8vw;
+        line-height: 0;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -5vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    .titulo1{
+        position: absolute;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 12vw;
+        line-height: 0;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -5vh;
+    }
+}
+@media screen and (max-width: 450px) {
+    .titulo1{
+        position: absolute;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 12vw;
+        line-height: 0;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -3vh;
+    }
+}
