@@ -32,7 +32,7 @@ body{
     transform: translate(-50%, -50%);
     line-height: 0;
 }
-.nuvem1, .nuvem2{
+.nuvem-alta, .nuvem-baixa{
     position: absolute;
     background-image: url(./imagens/nuvem.webp);
     background-repeat: no-repeat;
@@ -40,12 +40,12 @@ body{
     width: 20vw;
     height: 20vh;
 }
-.nuvem1{
+.nuvem-alta{
     top: 5vh;
     left: 10vw;
     animation: movimento-nuvem 7s infinite alternate;
 }
-.nuvem2{
+.nuvem-baixa{
     top: 15vh;
     left: 80vw;
     animation: movimento-nuvem 7s infinite alternate;
@@ -53,6 +53,11 @@ body{
 @keyframes movimento-nuvem{
     0%{
         transform: translateX(-15vw);
+    }
+}
+@keyframes movimento-nuvem-menor{
+    0%{
+        transform: translateX(-20vw);
     }
 }
 @media screen and (max-width: 950px) {
@@ -68,12 +73,26 @@ body{
         position: absolute;
         line-height: 1;
         top: -5vh;
+    }    
+    .nuvem-alta, .nuvem-baixa{
+        width: 25vw;
+        height: 25vh;
+    }
+    .nuvem-alta{
+        top: 12vh;
+        left: 10vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 22vh;
+        left: 75vw;
+        animation: movimento-nuvem 5s infinite alternate;
     }
 }
 @media screen and (max-width: 800px) {
     .titulo1{
         position: absolute;
-        top: 25vh;
+        top: 20vh;
         left: 50vw;
         transform: translate(-50%, -50%);
         font-size: 12vw;
@@ -84,6 +103,20 @@ body{
         position: absolute;
         line-height: 1;
         top: -5vh;
+    }
+    .nuvem-alta, .nuvem-baixa{
+        width: 30vw;
+        height: 30vh;
+    }
+    .nuvem-alta{
+        top: 23vh;
+        left: 12vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 30vh;
+        left: 70vw;
+        animation: movimento-nuvem 5s infinite alternate;
     }
 }
 @media screen and (max-width: 450px) {
@@ -100,5 +133,19 @@ body{
         position: absolute;
         line-height: 1;
         top: -3vh;
+    }
+    .nuvem-alta, .nuvem-baixa{
+        width: 50vw;
+        height: 50vh;
+    }
+    .nuvem-alta{
+        top: 8vh;
+        left: 12vw;
+        animation: movimento-nuvem-menor 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 40vh;
+        left: 70vw;
+        animation: movimento-nuvem-menor 5s infinite alternate;
     }
 }
