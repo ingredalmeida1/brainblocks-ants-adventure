@@ -6,3 +6,13 @@ body{
     width: 100vw;
     height: 100vh;
 }
+.terra{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url(./imagens/rodape-grande.png);
+    background-size: cover;
+    width: 110%;
+    height: 10vh;
+    margin: 0vh 0vw -0.3vh -2vw;
+}
