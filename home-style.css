@@ -32,6 +32,28 @@ body{
     transform: translate(-50%, -50%);
     line-height: 0;
 }
+.nuvem1, .nuvem2{
+    position: absolute;
+    background-image: url(./imagens/nuvem.webp);
+    background-size: cover;
+    width: 20vw;
+    height: 20vh;
+}
+.nuvem1{
+    top: 5vh;
+    left: 10vw;
+    animation: movimento-nuvem 5s infinite alternate;
+}
+.nuvem2{
+    top: 15vh;
+    left: 80vw;
+    animation: movimento-nuvem 5s infinite alternate;
+}
+@keyframes movimento-nuvem{
+    0%{
+        transform: translateX(-10vw);
+    }
+}
 @media screen and (max-width: 950px) {
     .titulo1{
         position: absolute;
