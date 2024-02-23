@@ -2,14 +2,12 @@
 
 > 🚧 Projeto em desenvolvimento 🚧
 
-<hr>
 
 ## 🎮 Como executar/testar nosso jogo:
 
 1. Localizar o arquivo HTML principal do projeto (index.html)
 2. Dar um duplo clique no arquivo HTML principal. Isso abrirá o arquivo no navegador padrão do seu sistema.
 
-<hr>
 
 ## 👩🏻‍💻 Como editar/modificar nosso jogo:
 
