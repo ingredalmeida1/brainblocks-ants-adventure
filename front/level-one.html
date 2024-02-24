@@ -7,17 +7,42 @@
 
         <title>FASE 1</title>
 
-        <link rel="icon" href="images/icon-guide-big.svg" type="image/x-icon">
-        <link rel="stylesheet" href="css/level-one-style.csstyle.css">
+        <link rel="icon" href="images/icon-guide.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/level-one-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <script src="js/level-one.js" defer></script>
     </head>
 
     <body>
-        <div>
-            
+        <script src="level-one.js"></script> 
+
+        <div class="header">
+                <span class="icon-container" onclick="returnToHome()">
+                    <i class="fas fa-solid fa-long-arrow-alt-left"></i>
+                </span>
+
+                <h1 class="level-name">FASE 1</h1>
+
+                <div class="button-instructions">
+                    <img src="images/button-tips.png" alt="">
+                </div>
         </div>
 
+        <div class="game-container">
+            <div class="game-board">
+                <img src="images/board.png" alt="">
+            </div>
+
+            <div class="code-container">
+                MONTE SEU CÓDIGO AQUI
+            </div>
+
+            <div class="blocks-container">
+                BLOCOS DISPONÍVEIS
+            </div>
+        </div>
     </body>
 
 </html>
