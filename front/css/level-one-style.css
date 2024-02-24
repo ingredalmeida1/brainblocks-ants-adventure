@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
+    margin-top: 10px;
 }
 
 .icon-container {
@@ -31,7 +32,7 @@
 .game-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .game-board {
@@ -57,6 +58,7 @@
 
 .run-button-container {
     text-align: center; 
+    margin-top: 10px;
 }
 
 .blocks-container {
@@ -70,9 +72,17 @@
     text-align: center;
     padding-top: 15px;
     position: relative;
+}
+
+.blocks {
+    background-color: #97CC7C;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     align-items: center;
 }
 
-
+.blocks img {
+    background-color: #97CC7C;
+    margin-top: 10px;
+}
