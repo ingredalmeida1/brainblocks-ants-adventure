@@ -10,10 +10,10 @@ body{
     position: fixed;
     bottom: 0;
     left: 0;
-    background-image: url(./imagens/rodape-grande.png);
+    background-image: url(./imagens/grama.png);
     background-size: cover;
     width: 110%;
-    height: 10vh;
+    height: 15vh;
     margin: 0vh 0vw -0.3vh -2vw;
 }
 @font-face {
@@ -60,6 +60,28 @@ body{
         transform: translateX(-20vw);
     }
 }
+.formigueiro{
+    background-image: url(./imagens/formigueiro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+    position: fixed;
+    bottom: 4vh;
+    left: 70%;
+    z-index: -2;
+}
+.formiga{
+    background-image: url(./imagens/formiga-folha-amarela.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15vw;
+    height: 15vh;
+    position: fixed;
+    bottom: 10vh;
+    left: 12vw;
+}
+
 @media screen and (max-width: 950px) {
     .titulo1{
         position: absolute;
@@ -68,6 +90,7 @@ body{
         transform: translate(-50%, -50%);
         font-size: 8vw;
         line-height: 0;
+        color: black;
     }
     .titulo2{
         position: absolute;
@@ -88,7 +111,14 @@ body{
         left: 75vw;
         animation: movimento-nuvem 5s infinite alternate;
     }
+    .formiga{
+        bottom: 9vh;
+    }
+    .formigueiro{
+        bottom: 5.5vh;
+    }
 }
+
 @media screen and (max-width: 800px) {
     .titulo1{
         position: absolute;
@@ -98,6 +128,7 @@ body{
         font-size: 12vw;
         line-height: 0;
         text-shadow: 0vw -0.5vw 0vw #ffb429;
+        color: purple;
     }
     .titulo2{
         position: absolute;
@@ -118,7 +149,14 @@ body{
         left: 70vw;
         animation: movimento-nuvem 5s infinite alternate;
     }
+    .formiga{
+        bottom: 7vh;
+    }
+    .formigueiro{
+        bottom: 4vh;
+    }
 }
+
 @media screen and (max-width: 450px) {
     .titulo1{
         position: absolute;
@@ -128,6 +166,7 @@ body{
         font-size: 12vw;
         line-height: 0;
         text-shadow: 0vw -0.5vw 0vw #ffb429;
+        color:blue;
     }
     .titulo2{
         position: absolute;
