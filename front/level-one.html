@@ -25,39 +25,38 @@
 
                 <h1 class="level-name">FASE 1</h1>
 
-                <figure class="instructions-button">
-                    <img src="images/instrucoes.png" alt="">
-                </figure>
+                <button class="button run-button">INSTRUÇÕES</button>
         </div>
 
         <div class="game-container">
             <figure class="game-board">
-                <img src="images/quadro.png" alt="">
-                <img src="" alt="">
+                <img src="images/caminho-50px.png" alt="">
             </figure>
 
-            <div class="code-container">
-                <div class="code">
-                    MONTE SEU CÓDIGO AQUI
+            <div class="code">
+                MONTE SEU CÓDIGO AQUI
+                <div class="column1" id="column1">
+                    
                 </div>
-    
-                <figure class="run-button-container">
-                    <img src="images/movimentar.png" alt="">
-                </figure>
             </div>
 
-            <div class="blocks-container">
+            <div class="blocks">
                 BLOCOS DISPONÍVEIS
-                <figure class="blocks">
-                    <img src="images/inicio.png" alt="">
-                    <img src="images/fim.png" alt="">
-                    <img src="images/avancar.png" alt="">
-                    <img src="images/coletar.png" alt="">
-                    <img src="images/depositar.png" alt="">
-                    <img src="images/virar.png" alt="">
-                </figure>
+                <div class="column2" id="column2">
+                    <div class="item1" id="card1" onclick="duplicateCard('card1')"> INÍCIO</div>
+                    <div class="item1" id="card2" onclick="duplicateCard('card2')"> FIM</div>
+                    <div class="item2" id="card3" onclick="duplicateCard('card3')"> AVANÇAR</div>
+                    <div class="item3" id="card4" onclick="duplicateCard('card4')"> VIRAR À DIREITA</div>
+                </div>
             </div>
         </div>
     </body>
+
+    <footer>
+        <div class="footer">
+            <button class="button run-button">MOVIMENTAR</button>
+            <button onclick="clearCode()" class="button">LIMPAR</button>
+        </div>
+    </footer>
 
 </html>
