@@ -29,9 +29,10 @@
         </div>
 
         <div class="game-container">
-            <figure class="game-board">
-                <img src="images/caminho-50px.png" alt="">
-            </figure>
+            <div class="game-board">
+                <img src="images/caminho.png" alt=""> <!--500px por 500px-->
+                <img class="ant" id="ant1" src="images/ant1.png" alt="">
+            </div>
 
             <div class="code">
                 MONTE SEU CÓDIGO AQUI
@@ -40,13 +41,19 @@
                 </div>
             </div>
 
-            <div class="blocks">
-                BLOCOS DISPONÍVEIS
-                <div class="column2" id="column2">
-                    <div class="item1" id="card1" onclick="duplicateCard('card1')"> INÍCIO</div>
-                    <div class="item1" id="card2" onclick="duplicateCard('card2')"> FIM</div>
-                    <div class="item2" id="card3" onclick="duplicateCard('card3')"> AVANÇAR</div>
-                    <div class="item3" id="card4" onclick="duplicateCard('card4')"> VIRAR À DIREITA</div>
+            <div class="blocksInfos">
+                <div class="blocks">
+                    BLOCOS DISPONÍVEIS
+                    <div class="column2" id="column2">
+                        <div class="item1" id="inicio" onclick="duplicateCard('inicio')"> INÍCIO</div>
+                        <div class="item1" id="fim" onclick="duplicateCard('fim')"> FIM</div>
+                        <div class="item2" id="avancar" onclick="duplicateCard('avancar')"> AVANÇAR</div>
+                        <div class="item3" id="virar" onclick="duplicateCard('virar')"> VIRAR À DIREITA</div>
+                    </div>
+                </div>
+
+                <div class="goal">
+                    OBJETIVO DA FASE
                 </div>
             </div>
         </div>
@@ -54,7 +61,7 @@
 
     <footer>
         <div class="footer">
-            <button class="button run-button">MOVIMENTAR</button>
+            <button id="movimentar" class="button run-button">MOVIMENTAR</button>
             <button onclick="clearCode()" class="button">LIMPAR</button>
         </div>
     </footer>
