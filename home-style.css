@@ -1,0 +1,224 @@
+body{
+    margin:0;
+    background: linear-gradient(to bottom,#04a2e0,#88d9e2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.terra{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url(./imagens/grama.png);
+    background-size: cover;
+    width: 110%;
+    height: 15vh;
+    margin: 0vh 0vw -0.3vh -2vw;
+}
+@font-face {
+    font-family: 'BarlowCondensed';
+    src: url('./fontes/BarlowCondensed-BlackItalic.ttf')format('truetype');
+}
+.titulo1{
+    font-family: 'BarlowCondensed', serif;
+    color: #ffd41f;
+    font-size: 7.5vw;
+    text-shadow: 0vw -0.4vw 0vw #ffb429;
+    text-align: center;
+    position: absolute;
+    top: 30vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    line-height: 0;
+}
+.nuvem-alta, .nuvem-baixa{
+    position: absolute;
+    background-image: url(./imagens/nuvem.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+}
+.nuvem-alta{
+    top: 5vh;
+    left: 10vw;
+    animation: movimento-nuvem 7s infinite alternate;
+}
+.nuvem-baixa{
+    top: 15vh;
+    left: 80vw;
+    animation: movimento-nuvem 7s infinite alternate;
+}
+@keyframes movimento-nuvem{
+    0%{
+        transform: translateX(-15vw);
+    }
+}
+@keyframes movimento-nuvem-menor{
+    0%{
+        transform: translateX(-20vw);
+    }
+}
+.formigueiro{
+    background-image: url(./imagens/formigueiro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20vw;
+    height: 20vh;
+    position: fixed;
+    bottom: 7vh;
+    left: 70%;
+    z-index: -2;
+}
+.formiga{
+    background-image: url(./imagens/formiga-folha-amarela.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15vw;
+    height: 15vh;
+    position: fixed;
+    bottom: 10vh;
+    left: 12vw;
+}
+.botao-jogar{
+    background-image: url(./imagens/placa-madeira.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 28vh;
+    position: absolute;
+    bottom: 12.8vh;
+    left: 40vw;
+}
+.texto-jogar{
+    font-family: 'BarlowCondensed', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+    position: absolute;
+    bottom: 16.5vh;
+    left: 2.7vw;
+    text-decoration: none;
+}
+.texto-jogar:hover{
+    font-size: 4.5vw;
+    bottom: 16vh;
+    left: 2.2vw;
+    cursor: pointer;
+}
+/*TO-DO: deixar o arbusto responsivo*/
+/*
+.arbusto{
+    background-image: url(./imagens/arbusto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 18vh;
+    position: absolute;
+    bottom: 12vh;
+    left: 70vw;
+    z-index: -2;
+}*/
+@media screen and (max-width: 950px) {
+    .titulo1{
+        position: absolute;
+        top: 20vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 8vw;
+        line-height: 0;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -5vh;
+    }    
+    .nuvem-alta, .nuvem-baixa{
+        width: 25vw;
+        height: 25vh;
+    }
+    .nuvem-alta{
+        top: 12vh;
+        left: 10vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 22vh;
+        left: 75vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .formiga{
+        bottom: 9vh;
+    }
+    .formigueiro{
+        bottom: 5.5vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .titulo1{
+        position: absolute;
+        top: 20vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 12vw;
+        line-height: 0;
+        text-shadow: 0vw -0.5vw 0vw #ffb429;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -5vh;
+    }
+    .nuvem-alta, .nuvem-baixa{
+        width: 30vw;
+        height: 30vh;
+    }
+    .nuvem-alta{
+        top: 23vh;
+        left: 12vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 30vh;
+        left: 70vw;
+        animation: movimento-nuvem 5s infinite alternate;
+    }
+    .formiga{
+        bottom: 7vh;
+    }
+    .formigueiro{
+        bottom: 4vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .titulo1{
+        position: absolute;
+        top: 25vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        font-size: 12vw;
+        line-height: 0;
+        text-shadow: 0vw -0.5vw 0vw #ffb429;
+    }
+    .titulo2{
+        position: absolute;
+        line-height: 1;
+        top: -3vh;
+    }
+    .nuvem-alta, .nuvem-baixa{
+        width: 50vw;
+        height: 50vh;
+    }
+    .nuvem-alta{
+        top: 8vh;
+        left: 12vw;
+        animation: movimento-nuvem-menor 5s infinite alternate;
+    }
+    .nuvem-baixa{
+        top: 40vh;
+        left: 70vw;
+        animation: movimento-nuvem-menor 5s infinite alternate;
+    }
+}
