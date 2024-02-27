@@ -52,8 +52,8 @@
 
 .ant {
     position: absolute; 
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 45px;
+    max-width: 45px;
     background-color: transparent;
 }
 
@@ -68,10 +68,12 @@
     font-size: 15px; 
     text-align: center;
     padding-top: 15px;
+    min-width: 20vw;
+    min-height: 60vh;
 }
 
 .blocks {
-    width: 25vw;
+    width: 20vw;
     height: 36vh;
     background-color: #97CC7C;
     border-radius: 20px;
@@ -101,7 +103,7 @@
 .item1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #F5B94E;
+    background-color: #ffd904;/*#F5B94E*/
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -111,7 +113,7 @@
 .item2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #D2691E;
+    background-color: #e61717;/*#D2691E*/
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -121,7 +123,7 @@
 .item3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #FFD700;
+    background-color: #e61717;/*#FFD700*/
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -131,7 +133,7 @@
 .cloned-item1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #F5B94E;
+    background-color: #ffd904;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -142,7 +144,7 @@
 .cloned-item2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #D2691E;
+    background-color: #e61717;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -153,7 +155,7 @@
 .cloned-item3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #FFD700;
+    background-color: #e61717;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -163,7 +165,7 @@
 
 .goal {
     margin-top: 3vh;
-    width: 25vw;
+    width: 20vw;
     height: 36vh;
     background-color: #97CC7C;
     border-radius: 20px;
