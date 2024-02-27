@@ -96,14 +96,14 @@ body{
     font-family: 'BarlowCondensed', sans-serif;
     color: #fff;
     font-size: 4vw;
-    position: absolute;
-    bottom: 16.5vh;
+    position: relative;
+    bottom: -1.5vh;
     left: 2.7vw;
     text-decoration: none;
 }
 .texto-jogar:hover{
     font-size: 4.5vw;
-    bottom: 16vh;
+    bottom: -1vh;
     left: 2.2vw;
     cursor: pointer;
 }
