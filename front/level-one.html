@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASE 1</title>
-    <!--<link rel="stylesheet" href="style.css">  -->
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>FASE 1</title>
+
+        <link rel="icon" href="images/icone.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/level-one-style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <script src="js/level-one.js" defer></script>
+    </head>
+
+    <body>
+        <script src="level-one.js"></script> 
+
+        <div class="header">
+                <span class="icon-container" onclick="returnToHome()">
+                    <i class="fas fa-solid fa-long-arrow-alt-left"></i>
+                </span>
+
+                <h1 class="level-name">FASE 1</h1>
+
+                <button class="button run-button">INSTRUÇÕES</button>
+        </div>
+
+        <div class="game-container">
+            <div class="game-board">
+                <img src="images/caminho.png" alt=""> <!--500px por 500px-->
+                <img class="ant" id="ant1" src="images/ant1.png" alt="">
+            </div>
+
+            <div class="code">
+                MONTE SEU CÓDIGO AQUI
+                <div class="column1" id="column1">
+                    
+                </div>
+            </div>
+
+            <div class="blocksInfos">
+                <div class="blocks">
+                    BLOCOS DISPONÍVEIS
+                    <div class="column2" id="column2">
+                        <div class="item1" id="inicio" onclick="duplicateCard('inicio')"> INÍCIO</div>
+                        <div class="item1" id="fim" onclick="duplicateCard('fim')"> FIM</div>
+                        <div class="item2" id="avancar" onclick="duplicateCard('avancar')"> AVANÇAR</div>
+                        <div class="item3" id="virar" onclick="duplicateCard('virar')"> VIRAR À DIREITA</div>
+                    </div>
+                </div>
+
+                <div class="goal">
+                    OBJETIVO DA FASE
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <div class="footer">
+            <button id="movimentar" class="button run-button">MOVIMENTAR</button>
+            <button onclick="clearCode()" class="button">LIMPAR</button>
+        </div>
+    </footer>
+
+</html>
