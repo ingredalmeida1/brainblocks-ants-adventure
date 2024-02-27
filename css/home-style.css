@@ -88,7 +88,7 @@ body{
     background-size: cover;
     width: 15vw;
     height: 28vh;
-    position: absolute;
+    position: fixed;
     bottom: 12.8vh;
     left: 40vw;
 }
