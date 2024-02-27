@@ -10,7 +10,7 @@ body{
     position: fixed;
     bottom: 0;
     left: 0;
-    background-image: url(./images/grama.png);
+    background-image: url(../images/grama.png);
     background-size: cover;
     width: 110%;
     height: 15vh;
@@ -19,7 +19,7 @@ body{
 
 @font-face {
     font-family: 'BarlowCondensed';
-    src: url('./fontes/BarlowCondensed-BlackItalic.ttf')format('truetype');
+    src: url('../fontes/BarlowCondensed-BlackItalic.ttf')format('truetype');
 }
 .titulo1{
     font-family: 'BarlowCondensed', serif;
@@ -35,7 +35,7 @@ body{
 }
 .nuvem-alta, .nuvem-baixa{
     position: absolute;
-    background-image: url(./images/nuvem.webp);
+    background-image: url(../images/nuvem.webp);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20vw;
@@ -62,7 +62,7 @@ body{
     }
 }
 .formigueiro{
-    background-image: url(./images/formigueiro.png);
+    background-image: url(../images/formigueiro.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 20vw;
@@ -73,7 +73,7 @@ body{
     z-index: -2;
 }
 .formiga{
-    background-image: url(./images/formiga-folha-amarela.png);
+    background-image: url(../images/formiga-folha-amarela.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 15vw;
@@ -83,7 +83,7 @@ body{
     left: 12vw;
 }
 .botao-jogar{
-    background-image: url(./images/placa-madeira.webp);
+    background-image: url(../images/placa-madeira.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 15vw;
