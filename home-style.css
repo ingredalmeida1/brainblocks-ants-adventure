@@ -101,7 +101,9 @@ body{
     text-decoration: none;
 }
 .texto-jogar:hover{
-    color:#04a2e0;
+    font-size: 4.5vw;
+    bottom: 16vh;
+    left: 2.2vw;
     cursor: pointer;
 }
 
