@@ -81,6 +81,29 @@ body{
     bottom: 10vh;
     left: 12vw;
 }
+.botao-jogar{
+    background-image: url(./imagens/placa-madeira.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15vw;
+    height: 28vh;
+    position: absolute;
+    bottom: 12.8vh;
+    left: 40vw;
+}
+.texto-jogar{
+    font-family: 'BarlowCondensed', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+    position: absolute;
+    bottom: 16.5vh;
+    left: 2.7vw;
+    text-decoration: none;
+}
+.texto-jogar:hover{
+    color:#04a2e0;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 950px) {
     .titulo1{
@@ -90,7 +113,6 @@ body{
         transform: translate(-50%, -50%);
         font-size: 8vw;
         line-height: 0;
-        color: black;
     }
     .titulo2{
         position: absolute;
@@ -128,7 +150,6 @@ body{
         font-size: 12vw;
         line-height: 0;
         text-shadow: 0vw -0.5vw 0vw #ffb429;
-        color: purple;
     }
     .titulo2{
         position: absolute;
@@ -166,7 +187,6 @@ body{
         font-size: 12vw;
         line-height: 0;
         text-shadow: 0vw -0.5vw 0vw #ffb429;
-        color:blue;
     }
     .titulo2{
         position: absolute;
