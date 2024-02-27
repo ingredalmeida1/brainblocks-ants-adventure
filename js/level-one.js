@@ -1,11 +1,16 @@
 var intervalId;
 var currentIndex = 0;
 var moves = [];
-var ant = document.getElementById('ant1');
 var turnFlag = false;
 
-ant.style.left = '140px'; // 140px é a pos inicial
-ant.style.top = '75px'; // 75px é a pos inicial
+var popupOverlay = document.getElementById('popupOverlay');
+var closeButton = document.querySelector('.close-btn');
+var ant = document.getElementById('ant');
+var antSide = "images/formiga-lado.png";
+var antUp = "images/formiga-cima.png";
+
+ant.style.left = '140px'; 
+ant.style.top = '75px'; 
 
 // DULICAR BLOCO DE CÓDIGO NA COLUNA DE CÓDIGO
 function duplicateCard(id) {
@@ -37,19 +42,14 @@ function moveAnt(moves) {
 
     if (moves[currentIndex] === 'avancar') {
         if (turnFlag) {
-            console.log(turnFlag);
-            console.log('add em y');
             currentPositionY += 65;
         } else {
-            console.log(turnFlag);
-            console.log('add em x');
             currentPositionX += 60;
         }
     } else if (moves[currentIndex] === 'virar') {
-        console.log(turnFlag);
-        console.log('virei e add em y');
         currentPositionY += 65
         turnFlag = true;
+        ant.src = antUp;
     }
 
     if (currentPositionX >= 500 || currentPositionY >= 500 || currentIndex >= moves.length) {
@@ -77,12 +77,7 @@ function startAutoMove(moves) {
 
 // FINAL DA MOVIMENTAÇÃO
 function stopAutoMove() {
-    ant.style.left = '140px';
-    ant.style.top = '75px';
-    moves = [];
-    turnFlag = false;
-    var column1 = document.getElementById('column1');
-    column1.innerHTML = '';
+    resetValues();
     clearInterval(intervalId);
 }
 
@@ -93,6 +88,29 @@ function clearCode() {
     while (column1.firstChild) {
         column1.removeChild(column1.firstChild);
     }
+}
+
+// RESETAR VALORES DEFINIDOS INICIALMENTE
+function resetValues() {
+    ant.style.left = '140px';
+    ant.style.top = '75px';
+    moves = [];
+    turnFlag = false;
+    var column1 = document.getElementById('column1');
+    column1.innerHTML = '';
+    ant.src = antSide;
+}
+
+document.getElementById('instructionsButton').addEventListener('click', function() {
+    openPopup();
+});
+
+function openPopup() {
+    document.getElementById("popupOverlay").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("popupOverlay").style.display = "none";
 }
 
 // RETORNAR PARA PÁGINA INICIAL

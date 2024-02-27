@@ -16,22 +16,42 @@
     </head>
 
     <body>
-        <script src="level-one.js"></script> 
+        <audio id="backgroundMusic" loop autoplay>
+            <source src="audio/soundtrack.mp3">
+        </audio>
 
         <div class="header">
                 <span class="icon-container" onclick="returnToHome()">
                     <i class="fas fa-solid fa-long-arrow-alt-left"></i>
                 </span>
-
                 <h1 class="level-name">FASE 1</h1>
+                <img src="images/instrucoes.png" class="instructions-button" id="instructionsButton" alt="">
+        </div>
 
-                <button class="button run-button">INSTRUÇÕES</button>
+        <div class="popup-overlay" id="popupOverlay">
+            <button class="close-btn" onclick="closePopup()">X</button>
+                <p class="title">INSTRUÇÕES PARA JOGAR</p>
+                <p class="subtitle">Sobre o desenvolvimento do seu código:</p>
+                <p class="text">
+                    Para montar seu código no jogo, basta clicar nos blocos contendo os comandos desejados. 
+                    Cada vez que você clicar em um bloco, ele será adicionado à área de montagem do código. 
+                    Se quiser mudar sua lógica ou apagar o que foi feito até o momento, é só clicar no botão 
+                    "Limpar" localizado logo abaixo do seu código.
+                </p>
+
+                <p class="subtitle">Sobre a execução do seu código:</p>
+                <p class="text">
+                    Quando estiver satisfeito com o código que desenvolveu, clique no botão "Movimentar" 
+                    abaixo do seu código e aguarde alguns segundos. A formiguinha começará a se mover 
+                    conforme a ordem e os tipos de comandos que você escolheu.
+                </p>
+            </div>
         </div>
 
         <div class="game-container">
             <div class="game-board">
-                <img src="images/caminho.png" alt="" class="map"> <!--500px por 500px-->
-                <img class="ant" id="ant1" src="images/ant1.png" alt="">
+                <img src="images/caminho.png" alt="" class="map">
+                <img class="ant" id="ant" src="images/formiga-lado.png" alt="">
             </div>
 
             <div class="code">
@@ -53,19 +73,24 @@
                 </div>
 
                 <div class="goal">
-                    OBJETIVO DA FASE
+                    <p class="title-goal">OBJETIVO</p>
                     <p class="text-goal">
-                        Ajude a formiga a chegar no formigueiro!
+                        Ajude a formiguinha a encontrar o caminho de volta para casa! Nesta fase divertida, 
+                        você será o guia dessa pequena aventureira enquanto ela busca seu formigueiro aconchegante. 
+                        Com cada passo, você estará mais perto de levar nossa amiga para casa. Bora nessa?
                     </p>
+                    <p class="observation">Observação: o caminho a ser percorrido é definido pela cor verde escuro</p>
                 </div>
             </div>
         </div>
+
+        <script src="level-one.js"></script>
     </body>
 
     <footer>
         <div class="footer">
-            <button id="movimentar" class="button run-button">MOVIMENTAR</button>
-            <button onclick="clearCode()" class="button">LIMPAR</button>
+            <img src="images/limpar.png" class="clear-button button" onclick="clearCode()" alt="">
+            <img src="images/movimentar.png" id="movimentar" class="button" alt="">
         </div>
     </footer>
 
