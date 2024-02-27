@@ -10,6 +10,7 @@
     justify-content: space-between; 
     align-items: center; 
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .icon-container {
@@ -34,7 +35,7 @@
 .game-container {
     display: flex;
     justify-content: space-between;
-    margin: 3vh;
+    /*margin-top: 50px;*/
 }
 
 .game-board {
@@ -44,37 +45,29 @@
     margin-left: 30px;
 }
 
-.map{
-    width: 90%;
-    height: 90%;
-    margin: 2vw;
-}
-
 .ant {
     position: absolute; 
-    max-height: 45px;
-    max-width: 45px;
+    max-height: 50px;
+    max-width: 50px;
     background-color: transparent;
 }
 
 .code {
-    margin-right: 1vw;
-    margin-left: 1vw;
-    width: 25vw;
-    height: 75vh;
+    margin-right: 30px;
+    width: 350px;
+    height: 540px;
     background-color: #97CC7C;
     border-radius: 20px;
     font-family: 'Anonymous Pro', monospace;
     font-size: 15px; 
     text-align: center;
     padding-top: 15px;
-    min-width: 20vw;
-    min-height: 60vh;
 }
 
 .blocks {
-    width: 20vw;
-    height: 36vh;
+    margin-right: 30px;
+    width: 350px;
+    height: 260px;
     background-color: #97CC7C;
     border-radius: 20px;
     font-family: 'Anonymous Pro', monospace;
@@ -103,7 +96,7 @@
 .item1 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #ffd904;/*#F5B94E*/
+    background-color: #ffd904;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -113,7 +106,7 @@
 .item2 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #e61717;/*#D2691E*/
+    background-color: #e61717;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -123,7 +116,7 @@
 .item3 {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
-    background-color: #e61717;/*#FFD700*/
+    background-color: #e61717;
     padding: 10px;
     border-radius: 5px;
     width: 200px;
@@ -164,9 +157,10 @@
 }
 
 .goal {
-    margin-top: 3vh;
-    width: 20vw;
-    height: 36vh;
+    margin-top: 30px;
+    margin-right: 30px;
+    width: 350px;
+    height: 260px;
     background-color: #97CC7C;
     border-radius: 20px;
     font-family: 'Anonymous Pro', monospace;
@@ -184,12 +178,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 10px;
-    margin-left: 180px;
+    margin-bottom: 30px;
+    margin-left: 120px;
 }
 
 .button {
-    /*margin-top: 10px;*/
+    margin-top: 10px;
     padding: 10px 20px; 
     background-color: #FFD41F; 
     color: black;
@@ -202,4 +196,11 @@
 
 .run-button {
     margin-right: 10px;
+}
+
+.text-goal{
+    background-color: #97CC7C;
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 15px; 
+    margin: 15px;
 }
