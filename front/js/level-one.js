@@ -80,6 +80,7 @@ function stopAutoMove() {
     ant.style.left = '140px';
     ant.style.top = '75px';
     moves = [];
+    turnFlag = false;
     var column1 = document.getElementById('column1');
     column1.innerHTML = '';
     clearInterval(intervalId);
@@ -88,7 +89,7 @@ function stopAutoMove() {
 // LIMPAR COLUNA DE CÓDIGO
 function clearCode() {
     var column1 = document.getElementById('column1');
-
+    moves = [];
     while (column1.firstChild) {
         column1.removeChild(column1.firstChild);
     }
