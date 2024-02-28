@@ -255,18 +255,19 @@
     height: 240px;
     background-color: #97CC7C;
     border-radius: 10px;
-    padding-top: 15px;
+    padding: 15px;
     text-align: center;
     overflow-y: auto;
 }
 
 .goal::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
 }
 
 .goal::-webkit-scrollbar-thumb {
     background-color: #63A64E;
-    border-radius: 20px
+    border-radius: 20px;
+    border: 3px solid #97CC7C;
 }
 
 .title-goal {
@@ -308,8 +309,8 @@
     margin-bottom: 20px;
     margin-left: 120px;
 }
-
-@media screen and (max-width: 2000px) {
+/*
+@media screen and (max-width: 1000px) {
     .map{
         width: 80%;
         height: 80%;
@@ -335,4 +336,4 @@
     .cloned-item1,.cloned-item2,.cloned-item3{
         width: 120px;
     }
-}
+}*/
