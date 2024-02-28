@@ -314,19 +314,22 @@
     .map{
         width: 90%;
         height: 90%;
+        margin-left: 10px;
     }
 
     .code{
         width: 250px;
-        height: 400px;
+        height: 420px;
     }
 
     .blocks{
-        width: 200px;
+        width: 210px;
+        height: 200px;
     }
 
     .goal{
-        width: 200px;
+        width: 210px;
+        height: 200px;
     }
 
     .item1, .item2, .item3{
