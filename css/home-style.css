@@ -107,19 +107,7 @@ body{
     left: 2.2vw;
     cursor: pointer;
 }
-/*TO-DO: deixar o arbusto responsivo*/
-/*
-.arbusto{
-    background-image: url(./images/arbusto.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 30vw;
-    height: 18vh;
-    position: absolute;
-    bottom: 12vh;
-    left: 70vw;
-    z-index: -2;
-}*/
+
 @media screen and (max-width: 950px) {
     .titulo1{
         position: absolute;

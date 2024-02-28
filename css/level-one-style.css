@@ -82,7 +82,7 @@
     width: 30px;
     height: 30px;
     border-radius: 20px;
-    background-color: #FF0000;
+    background-color: #e61717;
     font-family: 'Anonymous Pro', monospace;
     color: white;
     border: none;
@@ -98,7 +98,8 @@
 .game-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .game-board {
@@ -116,9 +117,10 @@
 }
 
 .code {
-    margin-right: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
     width: 350px;
-    height: 540px;
+    height: 500px;
     background-color: #97CC7C;
     border-radius: 20px;
     font-family: 'Anonymous Pro', monospace;
@@ -131,7 +133,7 @@
 .blocks {
     margin-right: 30px;
     width: 370px;
-    height: 260px;
+    height: 240px;
     background-color: #97CC7C;
     border-radius: 20px;
     font-family: 'Anonymous Pro', monospace;
@@ -227,10 +229,10 @@
 }
 
 .goal {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-right: 30px;
     width: 370px;
-    height: 260px;
+    height: 240px;
     background-color: #97CC7C;
     border-radius: 20px;
     padding-top: 15px;
@@ -274,5 +276,13 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
-    margin-left: 120px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    .map{
+        width: 90%;
+        height: 90%;
+    }
+
 }
