@@ -309,13 +309,13 @@
     margin-bottom: 20px;
     margin-left: 120px;
 }
-/*
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1350px) {
     .map{
         width: 80%;
         height: 80%;
     }
-
+}/*
     .code{
         width: 200px;
         height: 400px;
@@ -336,4 +336,4 @@
     .cloned-item1,.cloned-item2,.cloned-item3{
         width: 120px;
     }
-}*/
+}
