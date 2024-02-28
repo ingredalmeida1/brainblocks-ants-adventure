@@ -279,14 +279,14 @@
     margin-left: 100px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 2000px) {
     .map{
         width: 80%;
         height: 80%;
     }
 
     .code{
-        min-width: 150px;
+        width: 150px;
     }
 
     .blocks{
@@ -299,6 +299,10 @@
     }
 
     .item1, .item2, .item3{
-        min-width: 100px;
+        width: 100px;
+    }
+
+    .cloned-item1,.cloned-item2,.cloned-item3{
+        width: 100px;
     }
 }
