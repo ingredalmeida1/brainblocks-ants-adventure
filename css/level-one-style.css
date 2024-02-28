@@ -281,8 +281,24 @@
 
 @media screen and (max-width: 800px) {
     .map{
-        width: 90%;
-        height: 90%;
+        width: 80%;
+        height: 80%;
     }
 
+    .code{
+        min-width: 150px;
+    }
+
+    .blocks{
+        width: 150px;
+
+    }
+
+    .goal{
+        width: 150px;
+    }
+
+    .item1, .item2, .item3{
+        min-width: 100px;
+    }
 }
