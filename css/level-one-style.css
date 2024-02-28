@@ -317,23 +317,23 @@
     }
 
     .code{
-        width: 200px;
+        width: 250px;
         height: 400px;
     }
 
     .blocks{
-        width: 150px;
+        width: 200px;
     }
 
     .goal{
-        width: 150px;
+        width: 200px;
     }
 
     .item1, .item2, .item3{
-        width: 120px;
+        width: 150px;
     }
 
     .cloned-item1,.cloned-item2,.cloned-item3{
-        width: 120px;
+        width: 150px;
     }
 }
