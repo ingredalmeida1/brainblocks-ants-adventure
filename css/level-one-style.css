@@ -312,9 +312,8 @@
 
 @media screen and (max-width: 1350px) {
     .map{
-        width: 90%;
-        height: 90%;
-        margin-left: 10px;
+        width: 80%;
+        height: 80%;
     }
 
     .code{
