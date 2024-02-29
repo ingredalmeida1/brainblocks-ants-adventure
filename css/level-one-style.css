@@ -20,10 +20,6 @@
     cursor: pointer;
 }
 
-.map{
-    margin-left: 50px;
-}
-
 .level-name {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
@@ -136,7 +132,7 @@
 }
 
 .code::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
 }
 
 .code::-webkit-scrollbar-thumb {
@@ -160,7 +156,7 @@
 }
 
 .blocks::-webkit-scrollbar {
-    width: 10px; 
+    width: 12px; 
 }
 
 .blocks::-webkit-scrollbar-thumb {
@@ -320,7 +316,7 @@
     .map{
         width: 80%;
         height: 80%;
-        margin-left: 10px;
+        margin-left: 60px;
     }
 
     .code{
