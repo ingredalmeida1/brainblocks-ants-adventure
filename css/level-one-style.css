@@ -313,23 +313,19 @@
 }
 
 @media screen and (max-width: 1350px) {
-    .map{
-        margin-right: -50px;
-    }
-
     .code{
         width: 250px;
-        height: 420px;
+        height: 500px;
     }
 
     .blocks{
         width: 210px;
-        height: 200px;
+        height: 240px;
     }
 
     .goal{
         width: 210px;
-        height: 200px;
+        height: 240px;
     }
 
     .item1, .item2, .item3{
@@ -338,5 +334,9 @@
 
     .cloned-item1,.cloned-item2,.cloned-item3{
         width: 150px;
+    }
+    
+    .game-board{
+        margin-left: 10px;
     }
 }
