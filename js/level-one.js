@@ -7,7 +7,7 @@ var popupOverlay = document.getElementById('popupOverlay');
 var closeButton = document.querySelector('.close-btn');
 var ant = document.getElementById('ant');
 var antSide = "images/formiga-lado.png";
-var antUp = "images/formiga-cima.png";
+var antUp = "images/formiga-frente.png";
 
 ant.style.left = '140px'; 
 ant.style.top = '75px'; 
@@ -47,7 +47,6 @@ function moveAnt(moves) {
             currentPositionX += 60;
         }
     } else if (moves[currentIndex] === 'virar') {
-        currentPositionY += 65
         turnFlag = true;
         ant.src = antUp;
     }
