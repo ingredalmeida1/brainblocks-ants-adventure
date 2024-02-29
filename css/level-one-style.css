@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 
+.map{
+    margin-left: 50px;
+}
+
 .level-name {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700; 
@@ -137,7 +141,8 @@
 
 .code::-webkit-scrollbar-thumb {
     background-color: #63A64E;
-    border-radius: 20px
+    border-radius: 20px;
+    border: 3px solid #97CC7C;
 }
 
 .blocks {
@@ -160,7 +165,8 @@
 
 .blocks::-webkit-scrollbar-thumb {
     background-color: #63A64E;
-    border-radius: 20px
+    border-radius: 20px;
+    border: 3px solid #97CC7C;
 }
 
 .column1 {
@@ -314,6 +320,7 @@
     .map{
         width: 80%;
         height: 80%;
+        margin-left: 10px;
     }
 
     .code{
