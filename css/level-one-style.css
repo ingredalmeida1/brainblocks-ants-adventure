@@ -313,13 +313,15 @@
 }
 
 @media screen and (max-width: 1350px) {
-    .map{
-        width: 80%;
-        height: 80%;
+    .map{/*
+        width: 90%;
+        height: 90%;*/
         margin-left: 40px;
-        margin-top: 5px;
     }
 
+    .ant{
+        margin-top: 50px;
+    }
     .code{
         width: 250px;
         height: 420px;
