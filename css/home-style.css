@@ -73,7 +73,7 @@ body{
     z-index: -2;
 }
 .formiga{
-    background-image: url(../images/formiga-folha-amarela.png);
+    background-image: url(../images/formiga-lado.png);
     background-repeat: no-repeat;
     background-size: contain;
     width: 15vw;
