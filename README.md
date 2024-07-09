@@ -4,6 +4,10 @@
 
 Este projeto foi apresentado na 12ª edição do Campus Mobile, e consiste em um jogo educativo projetado para ensinar conceitos de lógica computacional por meio de programação em blocos, alinhando-se às competências do eixo de Pensamento Computacional no Complemento à BNCC. Os usuários são desafiados a auxiliar uma formiga a alcançar o formigueiro, construindo o caminho através de blocos de programação que incluem comandos como início, fim, avançar, coletar, virar à direita, além de instruções condicionais e de repetição para fases mais avançadas. Cada fase apresenta desafios específicos, como a coleta máxima de folhas ou a passagem pelo número mínimo de blocos. Esses desafios são contextualizados, proporcionando motivação ao usuário, como a formiga estar perdida ou procurando alimento. 
 
+<video controls>
+  <source src="images/video.mp4" type="video/mp4">
+</video>
+
 ## Inovação
 
 - **Personalização dos Desafios:** Coletamos diversos dados dos alunos, incluindo o tempo de conclusão de desafios, erros cometidos, número de tentativas, entre outros, para fornecer relatórios abrangentes sobre o desempenho da turma aos professores. Além disso, a intenção é utilizar esses dados para treinar um modelo de aprendizado de máquina, personalizando os desafios conforme as dificuldades individuais dos alunos.
